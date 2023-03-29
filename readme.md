@@ -1,9 +1,9 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src="" />
+    <img alt="TeachMe" title="TeachMe" src="" />
 </h1>
 
 <p align="center">
-  <img alt="Proffy" src=".github/proffy.png" width="100%">
+  <img alt="TeachMe" src="" width="100%">
 </p>
 
 ## 🚀 Tecnologias
