@@ -2,15 +2,22 @@
   font-size: 60%;
 
   --color-background: #f0f0f7;
-  --color-primary-lighter: #9871f5;
-  --color-primary-light: #916bea;
-  --color-primary: #8257e5;
+  /* --color-primary-lighter: #9871f5; */
+  --color-primary-lighter: #007EB4;
+  /* --color-primary-light: #916bea; */
+  --color-primary-light: #0b597a;
+  /* --color-primary: #5BC5F2; */
+  --color-primary: #46a7ce;
+  /* --color-primary: #8257e5; */
   --color-primary-dark: #774dd6;
   --color-primary-darker: #6842c2;
-  --color-secundary: #04d361;
-  --color-secundary-dark: #04bf58;
+  /* --color-secundary: #04d361; */
+  --color-secundary: #FF6100;
+  /* --color-secundary-dark: #04bf58; */
+  --color-secundary-dark: #da5706;
   --color-title-in-primary: #ffffff;
-  --color-text-in-primary: #d4c2ff;
+  --color-text-in-primary: #000000;
+  /* --color-text-in-primary: #d4c2ff; */
   --color-text-title: #32264d;
   --color-text-complement: #9c98a6;
   --color-text-base: #6a6180;

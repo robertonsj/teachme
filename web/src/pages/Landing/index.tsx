@@ -1,14 +1,11 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-
-import logoImg from "../../assets/images/logo.svg";
-import landingImg from "../../assets/images/landing.svg";
-
+import logoImg from "../../assets/images/logoteachme.svg";
+import landingImg from "../../assets/images/teachme-new.svg";
 import studyIcon from "../../assets/images/icons/study.svg";
 import giveClassesIcon from "../../assets/images/icons/give-classes.svg";
 import purpleHeartIcon from "../../assets/images/icons/purple-heart.svg";
-
 import "./style.css";
 
 function Landing() {
@@ -38,10 +35,10 @@ function Landing() {
           </Link>
         </div>
 
-        <span className="total-connections">
+        {/* <span className="total-connections">
           Total de {0} conexões já realizadas{" "}
           <img src={purpleHeartIcon} alt="Coração roxo" />
-        </span>
+        </span> */}
       </div>
     </div>
   );
