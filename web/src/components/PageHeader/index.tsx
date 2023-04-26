@@ -4,8 +4,15 @@ import backIcon from "../../assets/images/icons/back.svg";
 import logoImg from "../../assets/images/logo.svg";
 
 import "./styles.css";
+import { ReactNode } from "react";
 
-function PageHeader() {
+interface PageHeaderProps {
+  children?: ReactNode | undefined;
+  title: string;
+  description?: string;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = (props) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">
@@ -15,9 +22,12 @@ function PageHeader() {
         <img src={logoImg} alt="TeachMe" />
       </div>
       <div className="header-content">
-        <strong>Estes são os professores disponíveis! :D</strong>
+        <strong>{props.title}</strong>
+        {props.description && <p>{props.description}</p>}
+
+        {props.children}
       </div>
     </header>
   );
-}
+};
 export default PageHeader;

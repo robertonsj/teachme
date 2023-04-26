@@ -4,7 +4,7 @@ import "./styles.css";
 function TeacherForm() {
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader />;
+      <PageHeader title="Ficamos felizes que quer dar aulas." />;
     </div>
   );
 }
