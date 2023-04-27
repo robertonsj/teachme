@@ -110,7 +110,8 @@
 
   .hero-image {
     grid-area: hero;
-    justify-self: end;
+    /* justify-self: end; */
+    margin-left: calc((100% - 200px) / 2);
   }
 
   .buttons-container {
