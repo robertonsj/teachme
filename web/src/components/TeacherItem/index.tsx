@@ -1,36 +1,43 @@
 import "./styles.css";
 import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
-function TeacherItem() {
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: "86999999090";
+}
+
+export interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
   return (
     <article className="teacher-item">
       <header>
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetdrawings.com%2Ffree-icon%2Fgeneric-avatar-icon-51.png&f=1&nofb=1&ipt=6f59022196eea412db4494266993f955ffd093efcbe53d03ff5fa13357330556&ipo=images"
-          alt="Teacher"
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Professor 1</strong>
-          <span>Disciplina A</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
-      <p>
-        Entusiasta de tecnologias da web
-        <br />
-        ReactJS and Laravel Expert Developer
-      </p>
+      <p>{teacher.bio}</p>
 
       <footer>
         <p>
           Preço/hora
-          <strong>R$ 80,00</strong>
+          <strong>{teacher.cost}</strong>
         </p>
-        <button type="button">
+        <a href={`https://wa.me/${teacher.whatsapp}`}>
           <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );
-}
+};
 export default TeacherItem;
