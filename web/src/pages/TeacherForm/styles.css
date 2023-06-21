@@ -12,17 +12,24 @@
   width: 100%;
   max-width: 74rem;
   border-radius: 0.8rem;
-  margin: -3.2rem auto 3.2rem;
+  /* define a posição do elemento em relação ao seu elemento pai */
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  /* move o elemento 50% para a esquerda em relação à sua própria largura, ou seja, centraliza-o horizontalmente */
+  transform: translateX(-50%);
   padding-top: 6.4rem;
   overflow: hidden;
+  /* margem mínima na leteral left e right */
+  margin: 0 5%;
 }
 
 #page-teacher-form main fieldset {
   border: 0;
-  padding: 0 2.4rem;
+  padding: 2.4rem;
 }
 
-#page-teacher-form main fieldset + fieldset {
+#page-teacher-form main fieldset+fieldset {
   margin-top: 6.4rem;
 }
 
